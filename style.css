@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: rgb(36, 0, 36);
+  background: rgb(36, 0, 6);
+  background: linear-gradient(
+    40deg,
+    rgba(36, 0, 6, 1) 2%,
+    rgba(121, 9, 19, 1) 45%,
+    rgba(255, 0, 129, 1) 100%
+  );
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  height: 600px;
+  background-color: rgba(255, 246, 240, 0.55);
+}
+
+.gamerule {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.453);
+  font-weight: 900px;
+  top: 30px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.gamerule p {
+  color: black;
+  font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    transform: scale(0.5);
+  }
+}
+
+.container .left-side {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgba(240, 248, 255, 0.288);
+}
+.container .left-side .score {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .right-side .score-right i {
+  display: none;
+}
+.active {
+  font-size: 2rem;
+  animation: 2s fadeIn infinite;
+  display: flex !important;
+}
+.container .left-side .score i {
+  display: none;
+}
+
+@keyframes fadeIn {
+  30% {
+    transform: translateX(-50px);
+  }
+  70% {
+    transform: translatex(50px);
+  }
+}
+@keyframes fadeInn {
+  30% {
+    transform: translateX(-50px);
+  }
+  70% {
+    transform: translatex(50px);
+  }
+}
+
+.container .left-side .score h2 {
+  font-size: 3rem;
+  color: black;
+}
+
+.container .left-side .score h2 {
+  font-size: 3rem;
+  color: black;
+}
+.container .left-side .score p {
+  font-size: 5rem;
+  color: #e5383b;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.container .left-side .total-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+  background-color: #78000087;
+  padding: 20px 70px;
+  border-radius: 10px;
+  color: White;
+}
+
+.container .left-side .total-score h3 {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.container .left-side .total-score p {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.container .right-side {
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.container .right-side .score-right {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .right-side .score-right h2 {
+  font-size: 3rem;
+  color: black;
+}
+
+.container .right-side .score-right h2 {
+  font-size: 3rem;
+  color: black;
+}
+.container .right-side .score-right p {
+  font-size: 5rem;
+  color: #e5383b;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+.container .right-side .total-score-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+  background-color: #78000087;
+  padding: 20px 70px;
+  border-radius: 10px;
+  color: White;
+}
+
+.container .right-side .total-score-right h3 {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.container .right-side .total-score-right p {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.newgame-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  height: 560px;
+  left: -67px;
+}
+
+.newgame-container .newgame {
+  background: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.newgame-container .dice {
+  width: 100px;
+  height: 100px;
+}
+.newgame-container .dice img {
+  width: 80px;
+  background-color: white;
+  border-radius: 9px;
+}
+
+.newgame-container .roll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.newgame-container .roll .rolls {
+  background: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.newgame-container .roll .hold {
+  background: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}

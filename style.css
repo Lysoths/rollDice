@@ -23,6 +23,8 @@ body {
     rgba(255, 0, 129, 1) 100%
   );
   font-family: "Courier New", Courier, monospace;
+  flex-direction: column;
+  gap: 25px;
 }
 
 .container {
@@ -33,7 +35,6 @@ body {
 }
 
 .gamerule {
-  position: absolute;
   background-color: rgba(255, 255, 255, 0.453);
   font-weight: 900px;
   top: 30px;

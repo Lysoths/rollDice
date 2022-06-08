@@ -15,6 +15,7 @@ let switchPlayer = true;
 let randomNumber = Math.ceil(Math.random() * 6);
 let diceNumber = 0;
 arrowLeft.classList.toggle("active");
+
 roll.addEventListener("click", () => {
   randomNumber = Math.ceil(Math.random() * 6);
   dice.setAttribute("src", `./image/${randomNumber}.png`);
@@ -39,12 +40,6 @@ roll.addEventListener("click", () => {
     switchPlayer = true;
     arrowLeft.classList.add("active");
     arrowRight.classList.remove("active");
-  }
-  if (parseInt(currentLeft.innerHTML) >= 100) {
-    alert("Player One Win !🎉");
-  }
-  if (parseInt(currentRight.innerHTML) >= 100) {
-    alert("Player Two Win !🎉");
   } else if (switchPlayer == true) {
     diceNumber = parseInt(currentLeft.innerHTML) + randomNumber;
     currentLeft.innerHTML = diceNumber;
@@ -58,6 +53,12 @@ roll.addEventListener("click", () => {
 });
 
 hold.addEventListener("click", () => {
+  if (parseInt(currentLeft.innerHTML) >= 100) {
+    alert("Player One Win !🎉");
+  }
+  if (parseInt(currentRight.innerHTML) >= 100) {
+    alert("Player Two Win !🎉");
+  }
   if (switchPlayer == true) {
     let playerOne = parseInt(currentLeft.innerHTML);
     player1Score.innerHTML = parseInt(player1Score.innerHTML) + playerOne;

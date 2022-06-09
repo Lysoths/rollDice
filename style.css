@@ -226,7 +226,7 @@ body {
   cursor: pointer;
 }
 
-.newgame-container .roll .rolls {
+.newgame-container .roll .rolls button {
   background: white;
   font-size: 1rem;
   font-weight: 500;
@@ -235,9 +235,14 @@ body {
   margin-bottom: 20px;
   font-weight: 600;
   cursor: pointer;
+  display: flex;
 }
 
-.newgame-container .roll .hold {
+.newgame-container .roll .rolls button:active {
+  transform: translateY(3px);
+}
+
+.newgame-container .roll .hold button {
   background: white;
   font-size: 1rem;
   font-weight: 500;
@@ -245,4 +250,9 @@ body {
   border-radius: 10px;
   font-weight: 600;
   cursor: pointer;
+  display: flex;
+}
+
+.newgame-container .roll .hold button:active {
+  transform: translateY(3px);
 }
